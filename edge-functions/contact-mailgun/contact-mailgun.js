@@ -54,7 +54,7 @@ export default async (request, context) => {
     return Response.json({
       statusCode: 200,
       status: resp?.ok ? "ok" : "error",
-      body: "Your message was sent successfully! We'll be in touch.",
+      body: "Votre message a été envoyé avec succès !",
     });
   } catch (e) {
     console.log("ERROR:", e);

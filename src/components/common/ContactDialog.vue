@@ -78,7 +78,7 @@
                 />
                 <label
                   class="peer-placeholder-shown:left-4 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-9 peer-focus:scale-75 peer-focus:text-primary"
-                  >{{ t("name") }} *</label
+                  >{{ t("nom") }} *</label
                 >
               </div>
 
@@ -105,7 +105,7 @@
                 />
                 <label
                   class="peer-placeholder-shown:left-4 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-9 peer-focus:scale-75 peer-focus:text-primary"
-                  >{{ t("phone") }}</label
+                  >{{ t("Télèphone") }}</label
                 >
               </div>
               <div class="input-group">
@@ -132,7 +132,7 @@
                   type="submit"
                   :disabled="!canSubmit"
                 >
-                  {{ t("submit") }}
+                  {{ t("envoyer") }}
                 </button>
               </div>
               <Loading :loading="loading" />

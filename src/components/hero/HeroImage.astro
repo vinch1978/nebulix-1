@@ -39,15 +39,15 @@ const { slug } = Astro.params;
             },
           }}
           src={thumbnail}
-          width={1920}
-          height={1080}
+          width={1080}
+          height={1920}
           ar={16 / 10}
           alt={title}
           breakpoints={[1000, 1280, 1440, 1536, 1920]}
           sizes="100vw"
           loading="eager"
           layout="fill"
-          position="entropy"
+          position="center"
           artDirectives={[
             {
               media: "(max-width: 500px)",
