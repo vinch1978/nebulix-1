@@ -16,7 +16,7 @@
       v-show="show"
     >
       <div class="mx-auto max-w-[12rem] pt-10">
-        <slot name="logo" />
+        <slot name="logo"  />
       </div>
       <slot name="links" />
       <slot name="social" />

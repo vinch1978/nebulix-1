@@ -22,16 +22,17 @@ const isActive = (href) => {
       href="/"
       aria-label={title}
       class="grid place-items-center py-3 text-primary"
-      ><img src="Users/vince/soinsenergetiques/public/logo.svg" alt={title} class="h-6" /></a
+      ><Icon name="logo" class="w-32 h-auto" /></a
     >
     {
       menu && (
-        <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-50 md:flex ">
+        <ul class="grid h-full place-items-center">
           {menu.map((link) => (
             <li class={`${isActive(link.href) ? "active font-semibold" : ""}`}>
               <a href={link.href} class={`block py-3`}>
                 {link.label}
               </a>
+              
             </li>
           ))}
         </ul>
@@ -64,12 +65,12 @@ const isActive = (href) => {
             <ColorSwitch client:idle />
           </li>
 
-          <li class="md:hidden">
+          <li class="">
             <NavMobile
               client:idle
               translations={{ menu: t("menu"), close: t("close") }}
             >
-              <Icon name="menu-solid" class="h-10 w-10" slot="menu" />
+
 
               <Icon name="close" class="h-10 w-10" slot="close" />
               <Icon name="logo" class="w-full" slot="logo" />

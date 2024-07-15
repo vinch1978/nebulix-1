@@ -503,3 +503,7 @@ a.link-underline {
   margin: 0;
   text-align: center;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
